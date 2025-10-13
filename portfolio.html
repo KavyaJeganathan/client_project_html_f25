@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
 </head>
 <body>
-    <header>
-        <a href = "#maincontent">Skip to Main Content</a>
-              <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-              <nav>
+  <div class="skip"><a href="#maincontent">Skip to Main Content</a></div>
+    <header class="site-header">
+              <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" class="site-logo">
+              <nav class="main-nav" aria-label="Main Navigation">
                   <ul>
                     <li><a href = "index.html">Home</a></li>
                     <li><a href = "resume.html">Resumes</a></li>
                     <li><a href = "network.html">Networking & Connections</a></li>
-                    <li><a href = "portfolio.html">Portfolios</a></li>
+                    <li><a href = "portfolio.html" aria-current="page">Portfolios</a></li>
                   </ul>
               </nav>
-              <h1>Portfolio Support</h1>
+              <h1 class="header-title">Portfolio Support</h1>
           </header>
 
-          <main id="maincontent">
-            <section>
+          <main class="container" id="maincontent">
+            <section class="portfolio-intro">
                 <h2>Create A Portfolio That Showcases Your Work</h2>
                 <p>
                     Your portfolio showcases who you are as a professional. It’s more than a website. It’s your chance to show your process, creativity, and the real-world impact of your work.
@@ -30,10 +34,10 @@
                 <p>
                     Need feedback? You can always <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank" rel="noopener noreferrer">meet with a CDO Career Coach</a> to review your materials.
                 </p>
-                <img src="images/UMSI_DesignJam_GreatLakesWaterSafety_03.JPG" width="400" alt="A student working on sticky note ideation during a design jam">
+                <img src="images/UMSI_DesignJam_GreatLakesWaterSafety_03.JPG" alt="A student working on sticky note ideation during a design jam">
             </section>
 
-            <section>
+            <section class="portfolio-offer-section">
                 <h2>What We Offer</h2>
                 <div>
                     <h3>Popular Resources To Begin Creating Your Portfolio:</h3>
@@ -69,7 +73,7 @@
                         A collection of sample UX portfolios to inspire your own.
                       </li>
                   </ul>
-                  <p><em><strong>Note:</strong> Access to <strong>Portfolio Rubric</strong> and <strong>Intro to UX Portfolios Slide Deck</strong> will require logging in with U-M credentials</em></p>
+                  <!-- <p><em><strong>Note:</strong> Access to <strong>Portfolio Rubric</strong> and <strong>Intro to UX Portfolios Slide Deck</strong> will require logging in with U-M credentials</em></p> -->
 
                 </div>
 
@@ -79,23 +83,25 @@
                     <li><a href="https://si-umich.12twenty.com/Login" target="_blank" rel="noopener noreferrer">CareerLink</a>: Bring your portfolio draft or live site to a CDO career coach for scheduled feedback.</li>
                     <li><a href="https://officehours.it.umich.edu/queue/1022/" target="_blank" rel="noopener noreferrer">Drop-In Career Coaching</a>: Drop in for a quick 5-10 minute portfolio consultation during the academic year.</li>
                 </ul>
+                  <p><em><strong>Note:</strong> Access to <strong>Portfolio Rubric</strong> and <strong>Intro to UX Portfolios Slide Deck</strong> will require logging in with U-M credentials</em></p>
+
                 </div>
             </section>
 
-            <section>
+            <section class="portfolio-creation-section">
                 <h2>Portfolio Creation Made Simple</h2>
                 <p>If you're not sure where to begin while crafting your portfolio, these are great first steps:</p>
                 <ul>
-                    <li>Review portfolios in your field by viewing sample portfolios from <a href="https://www.cofolios.com/" target="_blank" rel="noopener noreferrer">Cofolio Sample Portfolios</a>.</li>
-                    <li>Gather artifacts from your courses or personal projects.</li>
-                    <li>Start building your portfolio over winter break in year one (if possible).</li>
-                    <li>Get feedback from the CDO as you go by <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank" rel="noopener noreferrer">meeting with a CDO Career Coach</a>.</li>
+                    <li>Review portfolios in your field by viewing sample portfolios from <a href="https://www.cofolios.com/" target="_blank" rel="noopener noreferrer">Cofolio Sample Portfolios</a></li>
+                    <li>Gather artifacts from your courses or personal projects</li>
+                    <li>Start building your portfolio over winter break in year one (if possible)</li>
+                    <li>Get feedback from the CDO as you go by <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank" rel="noopener noreferrer">meeting with a CDO Career Coach</a></li>
                   </ul>
-                  <img src="images/UMSI_DesignJam_GreatLakesWaterSafety_01.JPG" width="700" alt="Students collaborating during a design jam">
+                  <img src="images/UMSI_DesignJam_GreatLakesWaterSafety_01.JPG" alt="Students collaborating during a design jam">
 
             </section>
 
-            <section>
+            <section class="strong-portfolio-section">
                 <h2>What's in a Strong Portfolio?</h2>
                 <p>Most portfolios include 3-5 projects and feature:</p>
                 <ul>
@@ -127,7 +133,7 @@
                 </ul>
             </section>
 
-            <section>
+            <section class="portfolio-best-practices-section">
                 <h2>Portfolio Best Practices</h2>
                 <ul>
                     <li>Use templates, no need to code from scratch.</li>
@@ -140,7 +146,7 @@
                 </ul>
             </section>
 
-            <section>
+            <section class="portfolio-help-section">
                 <h2>If You're Stuck On Project Ideas Due To:</h2>
                 <div>
                     <h3>Not Having Work Experience</h3>
@@ -166,36 +172,22 @@
                         </li>
                     </ul>
                 </div>
+                <img src="images/UMSI_DesignJam_GreatLakesWaterSafety_07.JPG" alt="Students working together during a design jam to ideate different ideas via sticky notes">
+
             </section>
 
-            <section>
-                <h2>When To Build Your Portfolio?</h2>
-                <ul>
-                    <li><strong>Fall semester:</strong> Review examples, gather artifacts.</li>
-                    <li><strong>Winter break (Year 1):</strong> Start building your site.</li>
-                    <li><strong>Spring:</strong> Finalize and tailor for applications.</li>
-                </ul>
-                    <p>If you're unsure about keeping up with your portfolio timeline, CDO can help with:</p>
-                    <ul>
-                        <li>Brainstorming content.</li>
-                        <li>Reviewing layout and structure.</li>
-                        <li>Providing feedback and rubrics.</li>
-                    </ul>
-                    <img src="images/UMSI_DesignJam_GreatLakesWaterSafety_07.JPG" width="700" alt="Students working together during a design jam to ideate different ideas via sticky notes">
-            </section>
-
-            <section>
+            <section class="portfolio-final-tips-section">
                 <h2>Final Tips</h2>
                 <ul>
                     <li>Keep your portfolio updated, it is a living document.</li>
                     <li>Focus on storytelling and visual process.</li>
                     <li>Proof-read every page of your portfolio.</li>
                     <li>Link to your resume, LinkedIn, and GitHub if relevant.</li>
-                    <li>Ask a peer or coach to test your portfolio and ask questions like <em>can this portfolio be navigated in under 2 minutes?</em></li>
+                    <li>Ask a peer or coach to test your portfolio and ask questions like: "can this portfolio be navigated in under 2 minutes?"</li>
                 </ul>
             </section>
 
-            <section>
+            <section class="portfolio-faqs">
                 <h2>Portfolio FAQs</h2>
                 <ul>
                   <li>
@@ -217,12 +209,6 @@
                 </ul>
               </section>
 
-              <section>
-                <h2>Connect with the UMSI Career Development Office</h2>
-                <p>
-                  The UMSI Career Development Office (CDO) offers personalized support through appointments, events, and resource guides. <a href="https://umich.instructure.com/courses/137916" target="_blank" rel="noopener noreferrer">Visit the CDO website</a> or <a href="https://www.si.umich.edu/about-umsi/getting-umsi" target="_blank" rel="noopener noreferrer">find us on campus</a> to learn more, schedule a coaching session, or just say hello.
-                </p>
-              </section>
               <!-- Content taken & modified from the Google Docs file titled “[Document] Portfolio Rubric.
             Google Docs. [Document] Portfolio Rubric. Retrieved September 6, 2025, from https://docs.google.com/document/d/1xw46Cm9DzC2wVQFxr_Ct96kbddhAhchzqUJpJJTSESc/edit?tab=t.0 -->
 
@@ -234,8 +220,29 @@
 
             <!-- Content taken & modified from the Google Slides presentation titled “[Presentation] Introduction to UX Portfolios. Google Slides. [Presentation] Introduction to UX Portfolios. Retrieved September 6, 2025, from https://docs.google.com/presentation/d/1NcQvaWDYhxiNDhS1usiM0aABkUtLmfiyRuw7SWxpwfg/edit?slide=id.p1#slide=id.p1 -->
           </main>
-          <footer>
-            <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916" target="_blank" rel="noopener noreferrer">UMSI Career Development Office </a></p>
-          </footer>
+          <footer class="site-footer">
+            <div class="footer-logo">
+              <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            </div>
+            <nav class="footer-links">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resumes</a></li>
+                <li><a href="network.html">Networking</a></li>
+                <li><a href="portfolio.html" aria-current="page">Portfolios</a></li>
+              </ul>
+            </nav>
+      
+            <div class="footer-contact">
+            <p><strong>Get In Touch</strong></p>
+            <p><a href="mailto:umsi.careers@umich.edu">Email us</a></p>
+            <p><a href="https://umich.instructure.com/courses/137916" target="_blank" rel="noopener noreferrer">Visit CDO website</a></p>
+            <p><a href="https://www.si.umich.edu/about-umsi/getting-umsi" target="_blank" rel="noopener noreferrer">Find us on campus</a></p>
+          </div>
+      
+        <div class="footer-disclaimer">
+          <p>&copy; 2025 University of Michigan School of Information</p>
+        </div>
+      </footer>
 </body>
 </html>

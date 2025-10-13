@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <a href = "#maincontent">Skip to Main Content</a>
-              <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-              <nav>
+  <div class="skip"><a href="#maincontent">Skip to Main Content</a></div>
+    <header class="site-header">
+              <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" class="site-logo">
+              <nav class="main-nav" aria-label="Main Navigation">
                   <ul>
                     <li><a href = "index.html">Home</a></li>
                     <li><a href = "resume.html">Resumes</a></li>
-                    <li><a href = "network.html">Networking & Connections</a></li>
+                    <li><a href = "network.html" aria-current="page">Networking & Connections</a></li>
                     <li><a href = "portfolio.html">Portfolios</a></li>
                   </ul>
               </nav>
-              <h1>Networking & Connections Support</h1>
+              <h1 class="header-title">Networking & Connections Support</h1>
           </header>
 
-          <main id="maincontent">
-            <section>
+          <main class="container" id="maincontent">
+            <section class="network-intro">
               <h2>Build a Network that Opens Doors</h2>
               <p>
                 Networking is one of the most powerful ways to discover opportunities, learn about careers, and build lasting professional relationships. Whether you’re looking to connect with alumni, peers, or professionals, this page will guide you through the process, from finding contacts to having meaningful conversations.
@@ -29,9 +33,11 @@
 
               <p>Need help crafting messages for outreach or choosing who to contact? You can always <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank">meet with a CDO Career Coach</a> for personalized support.
               </p>
+              <img src="images/umsi_careerfair.1.26.2315.jpg" alt="Students at a career fair networking with various different employees at different stands">
+
             </section>
 
-            <section>
+            <section class="why-network-section">
               <h2>Why Network?</h2>
               <p>Your network can open doors that online applications alone cannot. Building authentic relationships helps you:</p>
               <ul>
@@ -39,18 +45,20 @@
                 <li>Gain advice tailored to your career goals.</li>
                 <li>Discover hidden opportunities before they’re posted.</li>
               </ul>
-              <img src="images/umsi_careerfair.1.26.2315.jpg" width="700" alt="Students at a career fair networking with various different employees at different stands">
             </section>
 
-            <section>
+            <section class="network-offer">
               <h2>What We Offer</h2>
+              <div>
               <h3>Popular Networking Resources To Begin Creating Connections:</h3>
               <ul>
                 <li><a href="https://si-umich.12twenty.com/Login" target="_blank" rel="noopener noreferrer">UMSI CareerLink</a>: Access employer contacts and events.</li>
                 <li><a href="https://www.linkedin.com/groups/2649/" target="_blank" rel="noopener noreferrer">UMSI LinkedIn Group</a>: Network with UMSI alumni and students.</li>
                 <li><a href="https://umich.peoplegrove.com/v2" target="_blank" rel="noopener noreferrer">UMich Career Network (UCAN)</a>: Use a campus-wide networking tool.</li>
               </ul>
+            </div>
 
+            <div>
               <h3>Outreach Message Templates:</h3>
               <ul>
                 <li><a href="https://docs.google.com/document/d/1cwq2KtdKQbO-tICHKUyKRA3QY4_3VJ8NLC2kwPBY4dI/edit?tab=t.0" target="_blank" rel="noopener noreferrer">[CDO] Networking Outreach Email Examples</a></li>
@@ -58,12 +66,13 @@
                 <li><a href="https://resumeworded.com/networking-email-templates/" target="_blank" rel="noopener noreferrer">ResumeWorded: Networking Email Templates for 2023</a></li>
               </ul>
               <p><em><strong>Note:</strong> Access to <strong>[CDO] Networking Outreach Email Examples</strong> will require logging in with U-M credentials</em></p>
+            </div>
             </section>
 
-            <section>
+            <section class="network-steps-section">
               <h2>How to Network: A Step-By-Step Guide</h2>
 
-              <div>
+              <div data-step="1">
                 <h3>Step 1: Find the Right People to Connect With</h3>
                 <p>Start by identifying alumni and professionals who can share valuable insights or guidance. Use these trusted resources to find contacts:</p>
                 <ul>
@@ -71,10 +80,10 @@
                   <li><strong><a href="https://umich.peoplegrove.com/v2" target="_blank" rel="noopener noreferrer">UMich Career Network (UCAN)</a>:</strong> Broaden your reach across campus.</li>
                   <li><strong>Your Personal Network:</strong> Friends, faculty, supervisors, and mentors can offer introductions or advice.</li>
                 </ul>
-                <img src="images/umsi_careerfair.1.26.2310.jpg" width="700" alt="Two students networking with each other at a career fair">
+                <img src="images/umsi_careerfair.1.26.2310.jpg" alt="Two students networking with each other at a career fair">
               </div>
 
-              <div>
+              <div data-step="2">
                 <h3>Step 2: Reach Out and Get a Response</h3>
                 <p>Making that first connection can feel daunting, but remember: <em>each response is progress!</em> To improve your chances:</p>
                 <ul>
@@ -85,6 +94,7 @@
                 </ul>
 
                 <h4>How To Write Outreach Messages That Work</h4>
+                <div class="highlight-box">
                 <p>Whether emailing or messaging on LinkedIn, follow this simple formula:</p>
                 <ul>
                   <li>Start with your connection or shared affiliation.</li>
@@ -93,16 +103,21 @@
                   <li>Propose a timeframe for a short chat.</li>
                   <li>Always thank them for their time.</li>
                 </ul>
+                </div>
+
                 <p><strong>Outreach Message Templates:</strong></p>
+                <div class="template-links">
                 <ul>
                   <li><a href="https://docs.google.com/document/d/1cwq2KtdKQbO-tICHKUyKRA3QY4_3VJ8NLC2kwPBY4dI/edit?tab=t.0" target="_blank" rel="noopener noreferrer">[CDO] Networking Outreach Email Examples</a></li>
                   <li><a href="https://lettersmith.ai.umich.edu/" target="_blank" rel="noopener noreferrer">Lettersmith Templates</a></li>
                   <li><a href="https://resumeworded.com/networking-email-templates/" target="_blank" rel="noopener noreferrer">ResumeWorded: Networking Email Templates for 2023</a></li>
                 </ul>
+              </div>
                 <p><em><strong>Note:</strong> Access to <strong>[CDO] Networking Outreach Email Examples</strong> will require logging in with U-M credentials</em></p>
+              
               </div>
 
-              <div>
+              <div data-step="3">
                 <h3>Step 3: Have Effective Informational Interviews with TIARA</h3>
                 <p>
                   Informational interviews are informal conversations that help you learn about a career or company, without the pressure of a job interview. <br>Prepare by using the <strong>TIARA method</strong>, a simple way to organize your questions:
@@ -115,11 +130,11 @@
                   <li><strong>A – Assignments:</strong> Find out what projects or skills add value.</li>
                 </ul>
                 <p>End your conversation by thanking your informational interviewee and asking if you can follow up with questions later.</p>
-                <img src="images/UMSI_CareerFair2020_12.JPG" width="700" alt="A student partaking in an informational interview at a career fair">
+                <img src="images/UMSI_CareerFair2020_12.JPG" alt="A student partaking in an informational interview at a career fair">
               </div>
             </section>
 
-            <section>
+            <section class="network-faq">
               <h2>Networking FAQs</h2>
               <ul>
                 <li>
@@ -136,12 +151,6 @@
               </ul>
             </section>
 
-            <section>
-              <h2>Connect with the UMSI Career Development Office</h2>
-              <p>
-                The UMSI Career Development Office (CDO) offers personalized support through appointments, events, and resource guides. <a href="https://umich.instructure.com/courses/137916" target="_blank" rel="noopener noreferrer">Visit the CDO website</a> or <a href="https://www.si.umich.edu/about-umsi/getting-umsi" target="_blank" rel="noopener noreferrer">find us on campus</a> to learn more, schedule a coaching session, or just say hello.
-              </p>
-            </section>
             <!-- Content taken & modified from the Google Slides presentation titled "[Presentation] Informational Interviews Using Tiara Method".
               Google Slides. [Presentation] Informational Interviews Using Tiara Method. Retrieved September 6, 2025, from https://docs.google.com/presentation/d/1QR0UA8V4d_hjHuayVbzF5_bx8d_8m3Ohvx9e5SiBodg/edit?slide=id.g187a33b4e7_2_86#slide=id.g187a33b4e7_2_86 -->
 
@@ -151,8 +160,29 @@
             <!-- Content taken & modified from the Google Slides presentation titled "[Presentation] Intro to Making Connections".
               Google Slides. [Presentation] Intro to Making Connections. Retrieved September 6, 2025, from https://docs.google.com/presentation/d/1R6azi49e7vd3ubRtdm33qG6Aq3bLBDBue7blM6pv49I/edit?slide=id.g26478bd383d_0_6#slide=id.g26478bd383d_0_6 -->
           </main>
-          <footer>
-            <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916" target="_blank" rel="noopener noreferrer">UMSI Career Development Office </a></p>
-          </footer>
+          <footer class="site-footer">
+            <div class="footer-logo">
+              <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            </div>
+            <nav class="footer-links">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resumes</a></li>
+                <li><a href="network.html" aria-current="page">Networking</a></li>
+                <li><a href="portfolio.html">Portfolios</a></li>
+              </ul>
+            </nav>
+      
+            <div class="footer-contact">
+            <p><strong>Get In Touch</strong></p>
+            <p><a href="mailto:umsi.careers@umich.edu">Email us</a></p>
+            <p><a href="https://umich.instructure.com/courses/137916" target="_blank" rel="noopener noreferrer">Visit CDO website</a></p>
+            <p><a href="https://www.si.umich.edu/about-umsi/getting-umsi" target="_blank" rel="noopener noreferrer">Find us on campus</a></p>
+          </div>
+      
+        <div class="footer-disclaimer">
+          <p>&copy; 2025 University of Michigan School of Information</p>
+        </div>
+      </footer>
 </body>
 </html>

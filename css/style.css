@@ -1,0 +1,1253 @@
+/* STYLES ACROSS PAGES */
+
+/* SKIP TO MAIN CONTENT STYLES */
+.skip a {
+    position: absolute;
+    top: -65px;
+    left: 10px;
+    background-color: #FFCB05;
+    color: #00274C;
+    padding: 12px 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid transparent;
+    z-index: 1000;
+    border-radius: 4px;
+    transition: top 0.3s ease;
+  }
+
+  .skip a:focus {
+    top: 20px;
+    border: 2px solid #00274C;
+    outline: none;
+  }
+
+  /* Accessibility Focus Styles */
+  :focus {
+    outline: 3px dashed #FFCB05;
+    outline-offset: 4px;
+  }
+
+  /* BODY STYLES */
+  body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 0;
+    padding: 1rem;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    background-color: #f5f5f5;
+    font-size: 1.125rem;
+  }
+
+  .container {
+    grid-column: 1 / -1;
+  }
+
+  /* HEADER & FOOTER STYLES */
+  .site-header, .site-footer {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 0.5rem 1rem;
+    padding: 1rem 0;
+    background-color: #00274C;
+    color: #FFFFFF;
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+
+  /* Header Logo Style */
+  .site-logo,
+  .footer-logo img{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 75px;
+    height: auto;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin-bottom: 1.25rem;
+  }
+
+ /* Header Navigation Style */
+ .main-nav {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  width: 100%;
+  justify-self: center;
+}
+
+  /* Header & Footer Nav Link Selected Style */
+  .site-header .main-nav a[aria-current="page"],
+  .footer-links ul li a[aria-current="page"] {
+    color: #FFCB05;
+    text-decoration: underline;
+    font-size: 1.20rem;
+    font-weight: 900;
+  }
+
+  .main-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    gap: 0;
+  }
+
+  .main-nav ul li {
+    position: relative;
+    padding: 0 1.25rem;
+  }
+
+  /* Vertical Separator Between Header Nav Items Style*/
+  .main-nav ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    right: 0;
+    height: 50%;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .main-nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 0;
+  }
+
+  .main-nav ul li a:hover,
+  .main-nav ul li a:focus,
+  .footer-links ul li a:hover,
+  .footer-links ul li a:focus,
+  .footer-contact a:hover,
+  .footer-contact a:focus {
+    text-decoration: underline;
+  }
+
+  /* Header Title Banner */
+  .header-title {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    margin: 1rem 0 0 0;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F7B500;
+    color: #00274C;
+  }
+
+
+  /* Footer Navigation Link Styles */
+  .footer-links {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    padding-top: 0.5rem;
+  }
+
+  .footer-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 1.5rem;
+  }
+
+  .footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  /* Footer CDO Contact Information Styles */
+  .footer-contact {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    color: white;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    text-align: right;
+  }
+
+  .footer-contact strong {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .footer-contact a {
+    color: #FFCB05;
+  }
+
+  /* Footer Disclaimer Style */
+  .footer-disclaimer {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    padding-top: 0.875rem;
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+/*INDIVIDUAL PAGE STYLES */
+
+/* Introduction Section Format*/
+
+.index-intro-section, 
+.resume-intro, 
+.network-intro, 
+.portfolio-intro {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90%;
+    gap: 1.5rem;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    text-align: left;
+  }
+  
+  .index-intro-section h2, 
+  .resume-intro h2, 
+  .network-intro h2, 
+  .portfolio-intro h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #003366;
+  }
+  
+  .index-intro-section p, 
+  .resume-intro p, 
+  .network-intro p, 
+  .portfolio-intro p{
+    font-size: 1.125rem;
+    line-height: 1.5;
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    color: #222;
+  }
+
+  .resume-intro p a:hover,
+  .resume-intro p a:focus,
+  .network-intro p a:hover,
+  .network-intro p a:focus,
+  .portfolio-intro p a:hover,
+  .portfolio-intro p a:focus {
+    font-weight:bolder;
+    font-size:1.15rem;
+  }
+  
+  .index-intro-section iframe {
+    width: 100%;
+    height: 45vh;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.625rem rgba(0, 0, 0, 0.15);
+    border: none;
+  }
+
+  .resume-intro img,
+  .network-intro img,
+  .resume-offer img{
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .portfolio-intro img {
+    width: 100%;
+    height: 50vh;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+ /* RESOURCE SECTION FORMAT*/
+
+.index-resource-section,
+.resume-steps-section,
+.resume-finaltips-section,
+.portfolio-creation-section,
+.portfolio-final-tips-section,
+.portfolio-best-practices-section{
+    grid-column: 1 / -1;
+    max-width: 90%;
+    margin: 3rem auto;
+    padding: 0 1.5rem 3rem;
+  }
+
+  .index-resource-section h2,
+  .resume-steps-section h2,
+  .resume-finaltips-section h2,
+  .portfolio-creation-section h2,
+  .portfolio-final-tips-section h2,
+  .portfolio-best-practices-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #003366;
+  }
+
+  .resume-ai-section > p,
+  .portfolio-creation-section > p,
+  .portfolio-final-tips-section > p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-top: -1.5rem;
+    color: #00274C;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .index-resource-section ul,
+  .resume-steps-section ol,
+  .resume-finaltips-section ul,
+  .portfolio-creation-section ul,
+  .portfolio-final-tips-section ul,
+  .portfolio-best-practices-section ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Card Style */
+  .index-resource-section li,
+  .resume-steps-section li,
+  .resume-finaltips-section li,
+  .portfolio-creation-section li,
+  .portfolio-final-tips-section li,
+  .portfolio-best-practices-section li {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-left: 6px solid #FFCB05;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.08);
+    padding: 1.25rem 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: #00274C;
+  }
+
+  .index-resource-section li:hover,
+  .resume-steps-section li:hover,
+  .resume-finaltips-section li:hover,
+  .portfolio-creation-section li:hover,
+  .portfolio-final-tips-section li:hover,
+  .portfolio-best-practices-section li:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.12);
+  }
+  
+   /* Body text */
+   .index-resource-section li
+   .resume-steps-section li
+   .resume-finaltips-section li,
+   .portfolio-final-tips-section li,
+   .portfolio-creation-section li,
+   .portfolio-best-practices-section li
+   {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+
+  /* Link Styles */
+  .resume-finaltips-section li a:hover,
+  .resume-finaltips-section li a:focus,
+  .portfolio-creation-section li a:hover,
+  .portfolio-final-tips-section li a:hover,
+  .portfolio-final-tips-section li a:focus
+   {
+    font-weight:bolder;
+    font-size:1.15rem;
+  }
+
+  /* Title Style */
+  .index-resource-section li strong,
+  .resume-steps-section li strong,
+  .resume-finaltips-section li strong,
+  .portfolio-creation-section li strong,
+  .portfolio-final-tips-section li strong,
+  .resume-ai-section li strong,
+  .portfolio-best-practices-section li strong {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #003366;
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+
+/* LIST OF OFFERS FORMAT */
+
+.index-offer-section,
+.resume-ai-section,
+.why-network-section,
+.portfolio-creation-section{
+    grid-column: 1 / -1;
+    max-width: 90%;
+    margin: 3rem auto;
+    padding: 0 1.5rem 3rem;
+  }
+
+  .index-offer-section h2,
+  .resume-ai-section h2,
+  .why-network-section h2,
+  .portfolio-creation-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #003366;
+  }
+  
+  .index-offer-section > p,
+  .resume-ai-section > p, 
+  .why-network-section > p,
+  .portfolio-creation-section > p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #00274C;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  
+  /* Grid layout for cards */
+  .index-offer-section ul,
+  .resume-ai-section ul,
+  .why-network-section ul,
+  .portfolio-creation-section ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Card styles */
+  .index-offer-section li,
+  .resume-ai-section li,
+  .why-network-section li,
+  .portfolio-creation-section li {
+    display: flex;
+    flex-direction: column;
+    background-color: #E8F1FA;
+    border-left: 6px solid #0077B6;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.08);
+    padding: 1.25rem 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: #00274C;
+   
+  }
+  
+  .index-offer-section li:hover,
+  .resume-ai-section li:hover,
+  .why-network-section li:hover,
+  .portfolio-creation-section li:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Title text */
+  .index-offer-section li strong,
+  .resume-ai-section li strong,
+  .why-network-section li strong,
+  .portfolio-creation-section li strong {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #003366;
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  
+  /* Links inside card text */
+   .index-offer-section li a,
+   .resume-ai-section li a,
+   .why-network-section li a,
+   .portfolio-creation-section li a {
+    color: #00274C;
+    text-decoration: underline;
+    font-weight: 400;
+    transition: all 0.2s ease;
+  }
+  
+  .index-offer-section li a:hover,
+  .index-offer-section li a:focus,
+  .resume-ai-section li a:hover,
+  .resume-ai-section li a:focus,
+  .why-network-section li a:hover,
+  .why-network-section li a:focus,
+  .portfolio-creation-section li a:hover,
+  .portfolio-creation-section li a:focus {
+    color: #001F4D;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    outline: none;
+  }
+
+
+/* GETTING STARTED FORMAT */
+.index-getting-started-section, .resume-offer, .network-offer, .portfolio-offer-section {
+    grid-column: 1 / -1;
+    max-width: 90%;
+    margin: 3rem auto;
+    padding: 0 1.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    color: #00274C;
+  }
+  
+  /* Main Heading */
+  .index-getting-started-section h2, .resume-offer h2, .network-offer h2, .portfolio-offer-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  /* Yellow Banner */
+  .index-getting-started-section > div:nth-of-type(1),
+  .resume-offer > div:nth-of-type(1),
+  .network-offer > div:nth-of-type(1),
+  .portfolio-offer-section > div:nth-of-type(1) {
+    background-color: #FFCB05;
+    border-radius: 8px;
+    padding: 0;
+    color: #00274C;
+  }
+  
+  /* First Yellow Banner Title */
+  .index-getting-started-section > div:nth-of-type(1) p:first-child,
+  .resume-offer > div:nth-of-type(1) h3,
+  .network-offer > div:nth-of-type(1) h3,
+  .portfolio-offer-section > div:nth-of-type(1) h3
+   {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #00274C;
+    padding: 1.5rem 1.5rem 1rem;
+    margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #FFCB05;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  /* White interior area for body text */
+  .index-getting-started-section > div:nth-of-type(1) ul,
+  .resume-offer > div:nth-of-type(1) ul,
+  .network-offer > div:nth-of-type(1) ul,
+  .portfolio-offer-section > div:nth-of-type(1) ul {
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    padding: 1.5rem 2rem 2rem 5rem;
+    margin: 0;
+    color: #00274C;
+  }
+  
+  .index-getting-started-section > div:nth-of-type(1) li, 
+  .resume-offer > div:nth-of-type(1) li,
+  .network-offer > div:nth-of-type(1) l,
+  .portfolio-offer-section > div:nth-of-type(1) li {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+
+.index-getting-started-section > div:nth-of-type(1) li a, 
+.resume-offer > div:nth-of-type(1) li a,
+.network-offer > div:nth-of-type(1) li a,
+.portfolio-offer-section > div:nth-of-type(1) li a {
+  color: #00274C;
+  text-decoration: underline;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+
+.index-getting-started-section > div:nth-of-type(1) li a:hover,
+.index-getting-started-section > div:nth-of-type(1) li a:focus,
+.resume-offer > div:nth-of-type(1) li a:hover,
+.resume-offer > div:nth-of-type(1) li a:focus,
+.network-offer > div:nth-of-type(1) li a:hover,
+.network-offer > div:nth-of-type(1) li a:focus,
+.portfolio-offer-section > div:nth-of-type(1) li a:hover,
+.portfolio-offer-section > div:nth-of-type(1) li a:focus {
+  color: #001F4D; 
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  outline: none;
+}
+
+ /* Second Banner White */
+  .index-getting-started-section > div:nth-of-type(2), 
+  .resume-offer > div:nth-of-type(2),
+  .network-offer > div:nth-of-type(2),
+  .portfolio-offer-section > div:nth-of-type(2) {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  /* Second Banner Subheading */
+  .index-getting-started-section > div:nth-of-type(2) h3, 
+  .resume-offer > div:nth-of-type(2) h3,
+  .network-offer > div:nth-of-type(2) h3,
+  .portfolio-offer-section > div:nth-of-type(2) h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+
+  .index-getting-started-section > div:nth-of-type(2) ul, 
+  .resume-offer > div:nth-of-type(2) ul,
+  .network-offer > div:nth-of-type(2) ul,
+  .portfolio-offer-section > div:nth-of-type(2) ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.25rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+
+  .index-getting-started-section > div:nth-of-type(2) li, 
+  .resume-offer > div:nth-of-type(2) li,
+  .network-offer > div:nth-of-type(2) li,
+  .portfolio-offer-section > div:nth-of-type(2) li {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    background-color: #E8F1FA;
+    border-left: 5px solid #0077B6;
+    border-radius: 6px;
+    padding: 1.25rem;
+    color: #003366;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+  }
+  
+
+  .index-getting-started-section > div:nth-of-type(2) li:hover,
+  .index-getting-started-section > div:nth-of-type(2) li:focus-within, 
+  .resume-offer > div:nth-of-type(2) li:hover, 
+  .resume-offer > div:nth-of-type(2) li:focus-within,
+  .network-offer > div:nth-of-type(2) li:hover,
+  .network-offer > div:nth-of-type(2) li:focus-within,
+  .portfolio-offer-section > div:nth-of-type(2) li:hover,
+  .portfolio-offer-section > div:nth-of-type(2) li:focus-within {
+    background-color: #003366;
+    color: #fff;
+    transform: translateY(-0.15rem);
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.15);
+    outline: none;
+  }
+  
+
+  .index-getting-started-section > div:nth-of-type(2) a, 
+  .resume-offer > div:nth-of-type(2) a,
+  .network-offer > div:nth-of-type(2) a,
+  .portfolio-offer-section > div:nth-of-type(2) a {
+    color: inherit;
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-decoration: underline;
+    display: inline-block;
+  }
+  
+  .index-getting-started-section > div:nth-of-type(2) a:hover,
+  .index-getting-started-section > div:nth-of-type(2) a:focus, 
+  .resume-offer > div:nth-of-type(2) a:hover, 
+  .resume-offer > div:nth-of-type(2) a:focus,
+  .network-offer > div:nth-of-type(2) a:hover,
+  .network-offer > div:nth-of-type(2) a:focus,
+  .portfolio-offer-section > div:nth-of-type(2) a:hover,
+  .portfolio-offer-section > div:nth-of-type(2) a:focus {
+    text-decoration: underline;
+    color: #FFFFFF;
+    font-size: 1.125rem;
+  }
+  
+
+  .index-getting-started-section > div:nth-of-type(2) p,
+  .network-offer > div:nth-of-type(2) p,
+  .portfolio-offer-section > div:nth-of-type(2) p {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+
+  .index-getting-started-section img, .index-offer-section img, .portfolio-help-section img, .portfolio-creation-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+/*FAQ SECTIONS */
+
+.index-faq-section, .resume-faqs, .network-faq, .portfolio-faqs {
+    grid-column: 1 / -1;
+    max-width: 90%;
+    margin: 3rem auto 5rem;
+    padding: 0 1.5rem;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    color: #00274C;
+  }
+  
+  .index-faq-section h2, .resume-faqs h2, .network-faq h2, .portfolio-faqs h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .index-faq-section ul, .resume-faqs ul, .network-faq ul, .portfolio-faqs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .index-faq-section li, .resume-faqs li, .network-faq li, .portfolio-faqs li {
+    background-color: #E8F1FA;
+    border-left: 5px solid #0077B6;
+    border-radius: 6px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    color: #003366;
+    line-height: 1.6;
+    font-size: 1.125rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .index-faq-section li strong, .resume-faqs li strong, .network-faq li strong, .portfolio-faqs li strong {
+    font-weight: 900;
+    font-size: 1.25rem;
+  }
+  
+  .index-faq-section li:hover,
+  .index-faq-section li:focus-within,
+  .resume-faqs li:hover,
+  .resume-faqs li:focus-within {
+    background-color: #d1e4fa;
+  }
+
+  
+  .index-faq-section a,
+  .resume-faqs a, 
+  .network-faq a,
+  .portfolio-faqs a {
+    color: #00274C;
+    text-decoration: underline;
+    font-weight: 400;
+    transition: all 0.2s ease;
+  }
+  
+  .index-faq-section a:hover,
+  .index-faq-section a:focus,
+  .resume-faqs a:hover,
+  .resume-faqs a:focus,
+  .network-faq a:hover,
+  .network-faq a:focus,
+  .portfolio-faqs a:hover,
+  .portfolio-faqs a:focus {
+    color: #001F4D; 
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    outline: none;
+  }
+  
+  .index-faq-section p,
+  .resume-faqs p, 
+  .network-faq p,
+  .portfolio-faqs p {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    color: #555;
+    font-style: italic;
+    text-align: left;
+  }
+
+
+
+/* INDIVIDUAL RESUME PAGE STYLES */
+
+.resume-tips h2,
+.resume-optimize h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.resume-tips {
+  padding: 3rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.resume-tips > div {
+  background-color: #ffffff; 
+  border-left: 6px solid #0077B6;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.resume-tips > div:nth-of-type(2) {
+  border-left-color: #005f91;
+}
+
+.resume-tips > div:nth-of-type(3) {
+  border-left-color: #004e78;
+}
+
+.resume-tips > div:nth-of-type(4) {
+  border-left-color: #003f63;
+}
+
+.resume-tips > div:hover {
+  transform: translateY(-4px);
+}
+
+.resume-tips h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #00274C;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.resume-tips ul {
+  padding-left: 1.25rem;
+  list-style: disc;
+  margin-top: 0.5rem;
+}
+
+.resume-tips li {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.resume-tips li strong {
+  color: #001F4D;
+  font-weight: 600;
+}
+
+.resume-optimize {
+  padding: 3rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.resume-optimize > div {
+  background-color: #ffffff;  
+  border-left: 6px solid #FFCB05;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.resume-optimize > div:nth-of-type(2) {
+  border-left-color: #e0b800;
+  transform: translateY(20px); 
+}
+
+.resume-optimize > div:hover {
+  transform: translateY(-4px);
+}
+
+.resume-optimize h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.resume-optimize ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.resume-optimize li {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.resume-optimize p {
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 1rem;
+  line-height: 1.6;
+  color: #444;
+  padding-left: 1rem;
+  border-left: 4px solid #FFCB05;
+}
+
+
+.resume-optimize img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 3rem auto 0;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+/* NETWORKING INVIDUAL PAGE STYLES */
+
+.network-steps-section {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.network-steps-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #00274C;
+  margin-bottom: 1rem;
+}
+
+.network-steps-section > div {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 3rem 2rem 2rem 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-left: 6px solid #FFCB05;
+  overflow: visible; 
+}
+
+.network-steps-section > div::before {
+  content: attr(data-step);
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
+  background-color: #00274C;
+  color: #FFCB05;
+  font-weight: 800;
+  font-size: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.network-steps-section h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00274C;
+  margin: 0;
+}
+
+.network-steps-section h4 {
+  font-size: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #003366;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.network-steps-section p,
+.network-steps-section li {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #00274C;
+}
+
+.network-steps-section ul {
+  padding-left: 1.25rem;
+  margin-bottom: 1.5rem;
+  list-style-type: disc;
+}
+
+.network-steps-section li {
+  margin-bottom: 0.5rem;
+}
+
+.network-steps-section a {
+  color: #003366;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.network-steps-section a:hover,
+.network-steps-section a:focus {
+  color: #001F4D;
+  font-weight: 700;
+  outline: none;
+}
+
+.network-steps-section img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.network-steps-section .highlight-box {
+  background-color: #F8FAFC;
+  border-left: 4px solid #0077B6;
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.03);
+}
+
+.network-steps-section .template-links {
+  background-color: #F1F5F9;
+  border-left: 4px solid #005F73;
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+/* PORTFOLIO PAGE STYLES */
+
+.strong-portfolio-section {
+  grid-column: 1 / -1;
+  max-width: 90%;
+  margin: 3rem auto;
+  padding: 0 1.5rem 3rem;
+}
+
+.strong-portfolio-section > h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #003366;
+  text-align: left;
+}
+
+.strong-portfolio-section > p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+  color: #00274C;
+  text-align: left;
+}
+
+.strong-portfolio-section > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  list-style: none; 
+}
+
+.strong-portfolio-section > ul > li {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-left: 6px solid #0077B6;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.08);
+  padding: 1.5rem 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #00274C;
+  list-style: disc inside;
+}
+
+.strong-portfolio-section > ul > li:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.12);
+}
+
+.strong-portfolio-section li > strong {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #003366;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.strong-portfolio-section li > ul {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+  list-style: disc inside;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.strong-portfolio-section li > ul > li {
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+}
+
+.strong-portfolio-section li a:hover,
+.strong-portfolio-section li a:focus {
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+.portfolio-help-section {
+  grid-column: 1 / -1;
+  max-width: 90%;
+  margin: 3rem auto;
+  padding: 0 1.5rem 3rem;
+  color: #00274C;
+}
+
+.portfolio-help-section > h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #003366;
+  text-align: left;
+}
+
+.portfolio-help-section > div {
+  background: #fff;
+  border-left: 6px solid #0077B6;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.08);
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portfolio-help-section > div:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-help-section > div > h3 {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.portfolio-help-section ul {
+  padding-left: 1.25rem;
+  list-style: disc inside;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.portfolio-help-section ul ul {
+  padding-left: 1rem;
+  font-size: 1rem;
+  list-style: circle inside;
+  margin-top: 0.5rem;
+}
+
+.portfolio-help-section li {
+  margin-bottom: 0.75rem;
+}
+
+.portfolio-help-section a {
+  color: #0077B6;
+  text-decoration: none;
+}
+
+.portfolio-help-section a:hover,
+.portfolio-help-section a:focus {
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+
+/* Some Content inspired by and adapted from the following resources:
+
+   - MDN Web Docs. CSS Grid Layout. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+
+   - CSS-Tricks. A Complete Guide to Flexbox. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+   - MDN Web Docs. Using CSS Transitions. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
+
+   - WebAIM. Creating Accessible Focus Styles. https://webaim.org/techniques/css/invisiblecontent/
+
+   - CSS-Tricks. Box Shadow. https://css-tricks.com/almanac/properties/b/box-shadow/
+
+   - SMACSS. Scalable and Modular Architecture for CSS. https://smacss.com/
+
+*/
