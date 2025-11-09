@@ -32,7 +32,6 @@
   body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
     margin: 0;
     padding: 1rem;
     font-family: 'Atkinson Hyperlegible', sans-serif;
@@ -202,13 +201,68 @@
     border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 
+/* 404 Page Styles */
+.error-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  text-align: center;
+  padding: 6rem 2rem;
+  background-color: #f5f7fa;
+  border-radius: 10px;
+}
+
+.error-section h2 {
+  font-size: 10rem;
+  font-weight: 900;
+  color: #00274C;
+  margin: 0;
+}
+
+.error-section h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #003366;
+  margin: 1rem 0;
+}
+
+.error-section p {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-size: 1.3rem;
+  color: #00274C;
+  margin: 0.5rem 0;
+}
+
+.error-section .fun-quote {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 1rem 0 2rem;
+}
+
+.back-home {
+  display: inline-block;
+  background-color: #FFCB05;
+  color: #00274C;
+  font-weight: 700;
+  padding: 0.85rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-home:hover {
+  color: #00274C;
+  outline: 2px solid #00274C;
+}
+
 /*INDIVIDUAL PAGE STYLES */
 
 /* Introduction Section Format*/
 
-.index-intro-section, 
-.resume-intro, 
-.network-intro, 
+.index-intro-section,
+.resume-intro,
+.network-intro,
 .portfolio-intro {
     grid-column: 1 / -1;
     display: flex;
@@ -220,10 +274,10 @@
     padding: 0 1.5rem;
     text-align: left;
   }
-  
-  .index-intro-section h2, 
-  .resume-intro h2, 
-  .network-intro h2, 
+
+  .index-intro-section h2,
+  .resume-intro h2,
+  .network-intro h2,
   .portfolio-intro h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -231,10 +285,10 @@
     margin-bottom: 0.5rem;
     color: #003366;
   }
-  
-  .index-intro-section p, 
-  .resume-intro p, 
-  .network-intro p, 
+
+  .index-intro-section p,
+  .resume-intro p,
+  .network-intro p,
   .portfolio-intro p{
     font-size: 1.125rem;
     line-height: 1.5;
@@ -253,7 +307,7 @@
     font-weight:bolder;
     font-size:1.15rem;
   }
-  
+
   .index-intro-section iframe {
     width: 100%;
     height: 45vh;
@@ -357,7 +411,7 @@
     transform: translateY(-0.25rem);
     box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.12);
   }
-  
+
    /* Body text */
    .index-resource-section li
    .resume-steps-section li
@@ -397,7 +451,6 @@
     margin-bottom: 0.75rem;
   }
 
-
 /* LIST OF OFFERS FORMAT */
 
 .index-offer-section,
@@ -420,9 +473,9 @@
     margin-bottom: 1.5rem;
     color: #003366;
   }
-  
+
   .index-offer-section > p,
-  .resume-ai-section > p, 
+  .resume-ai-section > p,
   .why-network-section > p,
   .portfolio-creation-section > p {
     font-size: 1.125rem;
@@ -432,7 +485,7 @@
     margin-bottom: 2rem;
     text-align: left;
   }
-  
+
   /* Grid layout for cards */
   .index-offer-section ul,
   .resume-ai-section ul,
@@ -445,7 +498,7 @@
     padding: 0;
     margin: 0;
   }
-  
+
   /* Card styles */
   .index-offer-section li,
   .resume-ai-section li,
@@ -460,9 +513,9 @@
     padding: 1.25rem 1.5rem;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     color: #00274C;
-   
+
   }
-  
+
   .index-offer-section li:hover,
   .resume-ai-section li:hover,
   .why-network-section li:hover,
@@ -470,7 +523,7 @@
     transform: translateY(-0.25rem);
     box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.12);
   }
-  
+
   /* Title text */
   .index-offer-section li strong,
   .resume-ai-section li strong,
@@ -484,7 +537,6 @@
     margin-bottom: 0.75rem;
   }
 
-  
   /* Links inside card text */
    .index-offer-section li a,
    .resume-ai-section li a,
@@ -495,7 +547,7 @@
     font-weight: 400;
     transition: all 0.2s ease;
   }
-  
+
   .index-offer-section li a:hover,
   .index-offer-section li a:focus,
   .resume-ai-section li a:hover,
@@ -524,7 +576,7 @@
     font-family: 'Atkinson Hyperlegible', sans-serif;
     color: #00274C;
   }
-  
+
   /* Main Heading */
   .index-getting-started-section h2, .resume-offer h2, .network-offer h2, .portfolio-offer-section h2 {
     font-family: 'Montserrat', sans-serif;
@@ -534,7 +586,7 @@
     margin-bottom: 1rem;
     text-align: left;
   }
-  
+
   /* Yellow Banner */
   .index-getting-started-section > div:nth-of-type(1),
   .resume-offer > div:nth-of-type(1),
@@ -545,7 +597,7 @@
     padding: 0;
     color: #00274C;
   }
-  
+
   /* First Yellow Banner Title */
   .index-getting-started-section > div:nth-of-type(1) p:first-child,
   .resume-offer > div:nth-of-type(1) h3,
@@ -562,7 +614,7 @@
     background-color: #FFCB05;
     border-radius: 8px 8px 0 0;
   }
-  
+
   /* White interior area for body text */
   .index-getting-started-section > div:nth-of-type(1) ul,
   .resume-offer > div:nth-of-type(1) ul,
@@ -574,10 +626,10 @@
     margin: 0;
     color: #00274C;
   }
-  
-  .index-getting-started-section > div:nth-of-type(1) li, 
+
+  .index-getting-started-section > div:nth-of-type(1) li,
   .resume-offer > div:nth-of-type(1) li,
-  .network-offer > div:nth-of-type(1) l,
+  .network-offer > div:nth-of-type(1) li,
   .portfolio-offer-section > div:nth-of-type(1) li {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 1.125rem;
@@ -586,7 +638,7 @@
     margin-bottom: 0.75rem;
   }
 
-.index-getting-started-section > div:nth-of-type(1) li a, 
+.index-getting-started-section > div:nth-of-type(1) li a,
 .resume-offer > div:nth-of-type(1) li a,
 .network-offer > div:nth-of-type(1) li a,
 .portfolio-offer-section > div:nth-of-type(1) li a {
@@ -604,7 +656,7 @@
 .network-offer > div:nth-of-type(1) li a:focus,
 .portfolio-offer-section > div:nth-of-type(1) li a:hover,
 .portfolio-offer-section > div:nth-of-type(1) li a:focus {
-  color: #001F4D; 
+  color: #001F4D;
   font-weight: 700;
   font-size: 1.2rem;
   text-decoration: underline;
@@ -612,20 +664,20 @@
 }
 
  /* Second Banner White */
-  .index-getting-started-section > div:nth-of-type(2), 
+  .index-getting-started-section > div:nth-of-type(2),
   .resume-offer > div:nth-of-type(2),
   .network-offer > div:nth-of-type(2),
   .portfolio-offer-section > div:nth-of-type(2) {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     border-radius: 8px;
     padding: 2rem 1.5rem;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     gap: 1.25rem;
   }
-  
+
   /* Second Banner Subheading */
-  .index-getting-started-section > div:nth-of-type(2) h3, 
+  .index-getting-started-section > div:nth-of-type(2) h3,
   .resume-offer > div:nth-of-type(2) h3,
   .network-offer > div:nth-of-type(2) h3,
   .portfolio-offer-section > div:nth-of-type(2) h3 {
@@ -637,9 +689,9 @@
     position: relative;
     padding-bottom: 0.5rem;
   }
-  
 
-  .index-getting-started-section > div:nth-of-type(2) ul, 
+
+  .index-getting-started-section > div:nth-of-type(2) ul,
   .resume-offer > div:nth-of-type(2) ul,
   .network-offer > div:nth-of-type(2) ul,
   .portfolio-offer-section > div:nth-of-type(2) ul {
@@ -650,9 +702,9 @@
     padding: 0;
     margin: 0;
   }
-  
 
-  .index-getting-started-section > div:nth-of-type(2) li, 
+
+  .index-getting-started-section > div:nth-of-type(2) li,
   .resume-offer > div:nth-of-type(2) li,
   .network-offer > div:nth-of-type(2) li,
   .portfolio-offer-section > div:nth-of-type(2) li {
@@ -668,11 +720,11 @@
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
   }
-  
+
 
   .index-getting-started-section > div:nth-of-type(2) li:hover,
-  .index-getting-started-section > div:nth-of-type(2) li:focus-within, 
-  .resume-offer > div:nth-of-type(2) li:hover, 
+  .index-getting-started-section > div:nth-of-type(2) li:focus-within,
+  .resume-offer > div:nth-of-type(2) li:hover,
   .resume-offer > div:nth-of-type(2) li:focus-within,
   .network-offer > div:nth-of-type(2) li:hover,
   .network-offer > div:nth-of-type(2) li:focus-within,
@@ -684,9 +736,9 @@
     box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.15);
     outline: none;
   }
-  
 
-  .index-getting-started-section > div:nth-of-type(2) a, 
+
+  .index-getting-started-section > div:nth-of-type(2) a,
   .resume-offer > div:nth-of-type(2) a,
   .network-offer > div:nth-of-type(2) a,
   .portfolio-offer-section > div:nth-of-type(2) a {
@@ -696,10 +748,10 @@
     text-decoration: underline;
     display: inline-block;
   }
-  
+
   .index-getting-started-section > div:nth-of-type(2) a:hover,
-  .index-getting-started-section > div:nth-of-type(2) a:focus, 
-  .resume-offer > div:nth-of-type(2) a:hover, 
+  .index-getting-started-section > div:nth-of-type(2) a:focus,
+  .resume-offer > div:nth-of-type(2) a:hover,
   .resume-offer > div:nth-of-type(2) a:focus,
   .network-offer > div:nth-of-type(2) a:hover,
   .network-offer > div:nth-of-type(2) a:focus,
@@ -709,7 +761,7 @@
     color: #FFFFFF;
     font-size: 1.125rem;
   }
-  
+
 
   .index-getting-started-section > div:nth-of-type(2) p,
   .network-offer > div:nth-of-type(2) p,
@@ -719,13 +771,17 @@
     color: #555;
     line-height: 1.5;
   }
-  
 
-  .index-getting-started-section img, .index-offer-section img, .portfolio-help-section img, .portfolio-creation-section img {
+
+  .index-getting-started-section img, 
+  .index-offer-section img, 
+  .portfolio-help-section img, 
+  .portfolio-creation-section img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
 
@@ -739,7 +795,7 @@
     font-family: 'Atkinson Hyperlegible', sans-serif;
     color: #00274C;
   }
-  
+
   .index-faq-section h2, .resume-faqs h2, .network-faq h2, .portfolio-faqs h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -748,13 +804,13 @@
     margin-bottom: 1.5rem;
     text-align: center;
   }
-  
+
   .index-faq-section ul, .resume-faqs ul, .network-faq ul, .portfolio-faqs ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  
+
   .index-faq-section li, .resume-faqs li, .network-faq li, .portfolio-faqs li {
     background-color: #E8F1FA;
     border-left: 5px solid #0077B6;
@@ -766,22 +822,26 @@
     font-size: 1.125rem;
     transition: background-color 0.3s ease;
   }
-  
+
   .index-faq-section li strong, .resume-faqs li strong, .network-faq li strong, .portfolio-faqs li strong {
     font-weight: 900;
     font-size: 1.25rem;
   }
-  
+
   .index-faq-section li:hover,
   .index-faq-section li:focus-within,
   .resume-faqs li:hover,
-  .resume-faqs li:focus-within {
+  .resume-faqs li:focus-within,
+  .network-faq li:hover,
+  .network-faq li:focus-within,
+  .portfolio-faqs li:hover,
+  .portfolio-faqs li:focus-within {
     background-color: #d1e4fa;
   }
 
-  
+
   .index-faq-section a,
-  .resume-faqs a, 
+  .resume-faqs a,
   .network-faq a,
   .portfolio-faqs a {
     color: #00274C;
@@ -789,7 +849,7 @@
     font-weight: 400;
     transition: all 0.2s ease;
   }
-  
+
   .index-faq-section a:hover,
   .index-faq-section a:focus,
   .resume-faqs a:hover,
@@ -798,15 +858,15 @@
   .network-faq a:focus,
   .portfolio-faqs a:hover,
   .portfolio-faqs a:focus {
-    color: #001F4D; 
+    color: #001F4D;
     font-weight: 700;
     font-size: 1.2rem;
     text-decoration: underline;
     outline: none;
   }
-  
+
   .index-faq-section p,
-  .resume-faqs p, 
+  .resume-faqs p,
   .network-faq p,
   .portfolio-faqs p {
     font-size: 1rem;
@@ -820,6 +880,12 @@
 
 /* INDIVIDUAL RESUME PAGE STYLES */
 
+.resume-tips {
+  padding: 3rem 1rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 .resume-tips h2,
 .resume-optimize h2 {
   font-family: 'Montserrat', sans-serif;
@@ -830,13 +896,7 @@
   text-align: left;
 }
 
-.resume-tips {
-  padding: 3rem 1rem;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.resume-tips > div {
+.resume-tips > div > div {
   background-color: #ffffff; 
   border-left: 6px solid #0077B6;
   border-radius: 10px;
@@ -846,15 +906,15 @@
   transition: transform 0.3s ease;
 }
 
-.resume-tips > div:nth-of-type(2) {
+.resume-tips > div > div:nth-of-type(2) {
   border-left-color: #005f91;
 }
 
-.resume-tips > div:nth-of-type(3) {
+.resume-tips > div > div:nth-of-type(3) {
   border-left-color: #004e78;
 }
 
-.resume-tips > div:nth-of-type(4) {
+.resume-tips > div > div:nth-of-type(4) {
   border-left-color: #003f63;
 }
 
@@ -891,11 +951,11 @@
 
 .resume-optimize {
   padding: 3rem 1rem;
-  max-width: 1100px;
+  width: 90%;
   margin: 0 auto;
 }
 
-.resume-optimize > div {
+.resume-optimize > div > div > div {
   background-color: #ffffff;  
   border-left: 6px solid #FFCB05;
   border-radius: 10px;
@@ -906,12 +966,12 @@
   position: relative;
 }
 
-.resume-optimize > div:nth-of-type(2) {
+.resume-optimize > div > div >div:nth-of-type(2) {
   border-left-color: #e0b800;
   transform: translateY(20px); 
 }
 
-.resume-optimize > div:hover {
+.resume-optimize > div > div > div:hover {
   transform: translateY(-4px);
 }
 
@@ -958,7 +1018,7 @@
 /* NETWORKING INVIDUAL PAGE STYLES */
 
 .network-steps-section {
-  max-width: 1000px;
+  max-width: 90%;
   margin: 4rem auto;
   padding: 0 1rem;
   display: flex;
@@ -985,7 +1045,7 @@
   flex-direction: column;
   gap: 1.5rem;
   border-left: 6px solid #FFCB05;
-  overflow: visible; 
+  overflow: visible;
 }
 
 .network-steps-section > div::before {
@@ -1115,7 +1175,7 @@
   gap: 2rem;
   padding: 0;
   margin: 0;
-  list-style: none; 
+  list-style: none;
 }
 
 .strong-portfolio-section > ul > li {
@@ -1182,7 +1242,7 @@
   text-align: left;
 }
 
-.portfolio-help-section > div {
+.portfolio-help-section > div > div > div {
   background: #fff;
   border-left: 6px solid #0077B6;
   border-radius: 0.5rem;
@@ -1192,12 +1252,12 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.portfolio-help-section > div:hover {
+.portfolio-help-section > div > div > div:hover {
   transform: translateY(-0.25rem);
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-help-section > div > h3 {
+.portfolio-help-section > div > div > div > h3 {
   font-family: 'Atkinson Hyperlegible', sans-serif;
   font-size: 1.5rem;
   font-weight: 900;
@@ -1235,6 +1295,274 @@
   font-size: 1.1rem;
 }
 
+/* FADE IN ANIMATION */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* DESKTOP VIEW */
+
+@media (min-width: 1024px) {
+
+
+  /* HEADER & FOOTER DESKTOP*/
+  body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .site-header, .site-footer{
+    margin: 0;
+  }
+
+  /* INTRO SECTION */
+
+  .index-intro-section,
+  .resume-intro,
+  .network-intro,
+  .portfolio-intro{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 5rem auto;
+    padding: 4rem 3rem;
+    gap: 3.5rem;
+    text-align: left;
+    position: relative;
+  }
+
+  /* Left Side Text Box */
+  .index-intro-section .intro-text,
+  .resume-intro .resume-intro-text,
+  .network-intro .network-intro-text,
+  .portfolio-intro .portfolio-intro-text,
+  .index-offer-section-flex .index-offer-section-text,
+  .index-resources-flex .index-resources-text,
+  .resume-resources-flex .resume-resources-text,
+  .portfolio-creation-section .portfolio-creation-text{
+    flex: 1 1 45%;
+    max-width: 36rem;
+    margin-top: 1rem;
+  }
+
+  .index-intro-section .intro-text h2,
+  .resume-intro .resume-intro-text h2,
+  .network-intro .network-intro-text h2,
+  .portfolio-intro .portfolio-intro-text h2,
+  .index-offer-section-flex .index-offer-section-text h2,
+  .index-resources-flex .index-resources-text h2,
+  .resume-resources-flex .resume-resources-text h3,
+  .portfolio-creation-section .portfolio-creation-text h2
+  {
+    font-size: 2.25rem;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+
+  .index-intro-section .intro-text p,
+  .resume-intro .resume-intro-text p,
+  .network-intro .network-intro-text p,
+  .portfolio-intro .portfolio-intro-text p,
+  .index-offer-section-flex .index-offer-section-text p
+  .index-resources-flex .index-resources-text p,
+  .resume-resources-flex .resume-resources-text p,
+  .portfolio-creation-section .portfolio-creation-text p{
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 33rem;
+  }
+
+/* Right Side Image or Video */
+.index-intro-section iframe,
+.resume-intro img,
+.network-intro img,
+.portfolio-intro img{
+  flex: 1 1 55%;
+  width: 42rem;
+  height: 24rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(2rem) rotate(3deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.index-intro-section iframe:hover,
+.resume-intro img:hover,
+.network-intro img:hover,
+.portfolio-intro img:hover {
+  transform: translateY(2rem) scale(1.02);
+  box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.25);
+}
+
+.index-intro-section::after,
+.resume-intro::after,
+.network-intro::after,
+.portfolio-intro::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 102, 204, 0.08);
+  border-radius: 1rem;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* FAQs*/
+
+.index-faq-section ul,
+.resume-faqs ul,
+.network-faq ul,
+.portfolio-faqs ul{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.index-faq-section li,
+.resume-faqs li,
+.network-faq li,
+.portfolio-faqs li {
+  margin-bottom: 0;
+}
+
+/* GETTING STARTED SECTION FORMAT*/
+
+
+.index-resources-flex,
+.resume-resources-flex,
+.resume-optimize-flex{
+  display:flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3.5rem;
+  text-align: left;
+  position: relative;
+}
+
+.index-resources-flex img,
+.resume-optimize-flex img,
+.resume-resources-flex img,
+.portfolio-help-section-flex img
+{
+  flex: 1 1 55%;
+  width: 42rem;
+  height: 24rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-3rem) rotate(3deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* GETTING STARTED SECTION FORMAT MARGINS*/
+
+.index-resources-flex img{
+  margin-left: 3rem;
+  margin-top: 7rem;
+}
+
+.resume-optimize-flex img
+{
+  margin-top: 20rem;
+}
+
+.resume-resources-flex img
+{
+  margin-top:15rem;
+  margin-left: 3rem;
+}
+
+.portfolio-help-section-flex img
+{
+  margin-top: 15rem;
+}
+
+
+/* WHAT WE OFFER SECTION FORMAT*/
+
+.index-offer-section-flex,
+.portfolio-creation-section,
+.portfolio-help-section-flex{
+  display:flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 5rem auto;
+  gap: 3.5rem;
+  text-align: left;
+  position: relative;
+}
+
+.index-offer-section-flex img,
+.portfolio-creation-section img
+  {
+    flex: 1 1 55%;
+    width: 42rem;
+    height: 24rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-3rem) rotate(-3deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* WHAT WE OFFER SECTION FORMAT MARGINS*/
+
+  .portfolio-creation-section img
+  {
+    margin-top: 15rem;
+  }
+
+
+  /* IMAGE HOVERS */
+
+  .index-offer-section-flex img:hover,
+  .index-resources-flex img:hover,
+  .resume-resources-flex img:hover,
+  .resume-optimize-flex img:hover,
+  .portfolio-creation-section img:hover,
+  .portfolio-help-section-flex img:hover {
+    transform: translateY(-4rem) rotate(0deg) scale(1.02);
+    box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.25);
+  }
+
+  /* 2 COLUMN FORMAT */
+  .resume-tips-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  /* NETWORK STYLES */
+
+  .network-steps-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .network-steps-section > h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .network-steps-section > div {
+    max-width: 85%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+}
 
 /* Some Content inspired by and adapted from the following resources:
 
@@ -1249,5 +1577,7 @@
    - CSS-Tricks. Box Shadow. https://css-tricks.com/almanac/properties/b/box-shadow/
 
    - SMACSS. Scalable and Modular Architecture for CSS. https://smacss.com/
+
+   - MDN Web Docs. Intersection Observer API. https://developer.mozilla.org/en‑US/docs/Web/API/Intersection_Observer_API
 
 */

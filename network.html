@@ -25,19 +25,20 @@
           </header>
 
           <main class="container" id="maincontent">
-            <section class="network-intro">
-              <h2>Build a Network that Opens Doors</h2>
+            <section class="network-intro fade-in">
+              <div class="network-intro-text">
+                 <h2>Build a Network that Opens Doors</h2>
               <p>
                 Networking is one of the most powerful ways to discover opportunities, learn about careers, and build lasting professional relationships. Whether you’re looking to connect with alumni, peers, or professionals, this page will guide you through the process, from finding contacts to having meaningful conversations.
               </p>
-
               <p>Need help crafting messages for outreach or choosing who to contact? You can always <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank">meet with a CDO Career Coach</a> for personalized support.
               </p>
+              </div>
               <img src="images/umsi_careerfair.1.26.2315.jpg" alt="Students at a career fair networking with various different employees at different stands">
 
             </section>
 
-            <section class="why-network-section">
+            <section class="why-network-section fade-in">
               <h2>Why Network?</h2>
               <p>Your network can open doors that online applications alone cannot. Building authentic relationships helps you:</p>
               <ul>
@@ -47,7 +48,7 @@
               </ul>
             </section>
 
-            <section class="network-offer">
+            <section class="network-offer fade-in">
               <h2>What We Offer</h2>
               <div>
               <h3>Popular Networking Resources To Begin Creating Connections:</h3>
@@ -72,7 +73,7 @@
             <section class="network-steps-section">
               <h2>How to Network: A Step-By-Step Guide</h2>
 
-              <div data-step="1">
+              <div class= "fade-in" data-step="1">
                 <h3>Step 1: Find the Right People to Connect With</h3>
                 <p>Start by identifying alumni and professionals who can share valuable insights or guidance. Use these trusted resources to find contacts:</p>
                 <ul>
@@ -83,7 +84,7 @@
                 <img src="images/umsi_careerfair.1.26.2310.jpg" alt="Two students networking with each other at a career fair">
               </div>
 
-              <div data-step="2">
+              <div class= "fade-in" data-step="2">
                 <h3>Step 2: Reach Out and Get a Response</h3>
                 <p>Making that first connection can feel daunting, but remember: <em>each response is progress!</em> To improve your chances:</p>
                 <ul>
@@ -114,10 +115,9 @@
                 </ul>
               </div>
                 <p><em><strong>Note:</strong> Access to <strong>[CDO] Networking Outreach Email Examples</strong> will require logging in with U-M credentials</em></p>
-              
               </div>
 
-              <div data-step="3">
+              <div class= "fade-in" data-step="3">
                 <h3>Step 3: Have Effective Informational Interviews with TIARA</h3>
                 <p>
                   Informational interviews are informal conversations that help you learn about a career or company, without the pressure of a job interview. <br>Prepare by using the <strong>TIARA method</strong>, a simple way to organize your questions:
@@ -134,7 +134,7 @@
               </div>
             </section>
 
-            <section class="network-faq">
+            <section class="network-faq fade-in">
               <h2>Networking FAQs</h2>
               <ul>
                 <li>
@@ -181,8 +181,28 @@
           </div>
       
         <div class="footer-disclaimer">
-          <p>&copy; 2025 University of Michigan School of Information</p>
+          <p>&copy; <span id="year"></span> University of Michigan School of Information</p>
         </div>
       </footer>
+
+      <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+
+        const faders = document.querySelectorAll('.fade-in');
+        const observerOptions = {
+          threshold: 0.4
+        };
+
+        const fadeInObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, observerOptions);
+
+        faders.forEach(fader => fadeInObserver.observe(fader));
+    </script>
 </body>
 </html>
