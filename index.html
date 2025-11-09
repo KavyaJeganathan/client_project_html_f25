@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>x
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,8 +32,8 @@
           The UMSI Career Development Office (CDO) supports MSI students through every stage of their career journey, from early exploration to full-time job offers. Our team offers strategic, personalized guidance to help you build the tools, confidence, and connections needed for long-term success. We don't just help you "find a job." We partner with you to develop career clarity, build real-world experience, and navigate the job search with intention. Whether you're applying to your first internship or preparing for a second career, we're here for your support.
         </p>
       </div>
-        <iframe src="https://www.youtube.com/embed/GSjGeDYJ5Nk?si=qhxJPRTIT___x8hG" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </section>
+      <iframe src="https://www.youtube-nocookie.com/embed/GSjGeDYJ5Nk?rel=0&modestbranding=1&iv_load_policy=3" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
 
     <section class="index-resource-section fade-in">
       <h2>Why Use This Resource?</h2>
@@ -164,20 +164,21 @@
       document.getElementById("year").innerHTML = new Date().getFullYear();
 
       const faders = document.querySelectorAll('.fade-in');
-      const observerOptions = {
-        threshold: 0.6
-      };
 
-      const fadeInObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, observerOptions);
+    const observerOptions = {
+      threshold: 0.6
+    };
 
-      faders.forEach(fader => fadeInObserver.observe(fader));
+    const fadeInObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    faders.forEach(fader => fadeInObserver.observe(fader));
     </script>
 </body>
 </html>
