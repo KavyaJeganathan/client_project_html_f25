@@ -1388,7 +1388,8 @@
 .network-intro img,
 .portfolio-intro img{
   flex: 1 1 55%;
-  width: 42rem;
+  width: 100%;
+  max-width: 42rem;
   height: 24rem;
   border-radius: 0.75rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -1456,7 +1457,8 @@
 .portfolio-help-section-flex img
 {
   flex: 1 1 55%;
-  width: 42rem;
+  width: 100%;
+  max-width: 42rem;
   height: 24rem;
   border-radius: 0.75rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -1507,7 +1509,8 @@
 .portfolio-creation-section img
   {
     flex: 1 1 55%;
-    width: 42rem;
+    width: 100%;
+    max-width: 42rem;
     height: 24rem;
     border-radius: 0.75rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -1578,6 +1581,6 @@
 
    - SMACSS. Scalable and Modular Architecture for CSS. https://smacss.com/
 
-   - MDN Web Docs. Intersection Observer API. https://developer.mozilla.org/en‑US/docs/Web/API/Intersection_Observer_API
+   
 
 */
